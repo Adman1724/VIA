@@ -1,0 +1,111 @@
+.header{
+  background-color: white;
+  text-decoration-color: #506A85;
+  display: flex;
+  justify-content: center;
+
+
+}
+.header_logo{
+  color: #506A85;
+  display: block;
+  padding: 5px 20px 5px 20px;
+  float: left;
+
+}
+.header_seacher{
+  display: block;
+  align-items: center;
+  padding: 5px 20px 5px 20px;
+  margin-top: 3%;
+  float: right;
+  color: #506A85;
+}
+.header_seacher>input[type=text] {
+  width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../images/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.header_seacher >input[type=text]:focus {
+    width: 100%;
+}
+.second_map{
+  width:100%;
+  height:400px;
+}
+.header_seacher.ui-tooltip {
+    background: #4a4a4a;
+    color: #96f226;
+    border: 2px solid #454545;
+    border-radius: 0px;
+    box-shadow: 0 0
+}
+.header_seacher.ui-autocomplete {
+    background: #4a4a4a;
+    border-radius: 0px;
+}
+.header_seacher.ui-autocomplete.source:hover {
+    background: #454545;
+}
+
+.header_seacher.ui-menu .ui-menu-item a{
+    background:red;
+    height:10px;
+font-size:8px;}
+.three_part{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+.countriesInfo1{
+  display: block;
+  text-align: left;
+  color:  #506A85;
+}
+.countriesInfoName{
+  display: block;
+  text-align: center;
+  color:  #506A85;
+}
+.countriesInfo2{
+  display: block;
+
+  color:  #506A85;
+}
+
+
+
+.countriesInfo{
+  width: 40%;
+  display: block;
+
+  color:  #506A85;
+  margin-left: 10%;
+
+
+}
+img{
+  margin-top: 20px;
+  border: 2px red solid ;
+  width: 50%;
+  height: auto;
+}
+.countriesInfo1{
+  width: 40%;
+margin-right: 10%;
+
+  display: block;
+  align-items: center;
+  color:  #506A85;
+
+}

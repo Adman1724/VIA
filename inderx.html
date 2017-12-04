@@ -1,0 +1,68 @@
+<html>
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="js/google_seacher.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/charts.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+  <div class="header">
+    <div class="header_logo">
+        <h1>PEAPLE COUNT</h1>
+    </div>
+    <div header_seacher>
+      <form class="header_seacher">
+
+  <input  class="header_seacher" type="text" name="search" id="searchBox1" placeholder="Search.." onkeyup="showCountries()">
+  <button type="button"  name="searchbutton" onclick="getCountriesInfo()">find</button>
+
+
+
+    </form>
+    </div>
+  </div>
+  <div class="second_map" id="map">
+
+         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUFKJRVcRq88tP2o2Nll9qWZKWjGU08ns&libraries=places&callback=initAutocomplete"
+        async defer></script>
+  </div>
+<div class="three_part">
+  <div class="countriesInfo">
+<div class="countriesInfoName">
+       <h1  id="countryName">World</h1>
+</div>
+
+         <h2 class="countriesInfo1" id="countryCapital">Nan</h2>
+
+
+
+           <h2 class="countriesInfo1" id="countryArea">Area: 510 065 284</h2>
+
+
+
+            <h2 class="countriesInfo1" id="countryCurr">Nan</h2>
+
+
+
+             <h2 class="countriesInfo1" id="countryPopul">7,6 Bilion</h2>
+             <h1  id="countryHistory">History</h1>
+             <form>
+          From:  <input id="from" type="number" name="quantity" min="1800" max="2017">
+          To: <input id="to" type="number" name="quantity" min="1800" max="2017">
+          <button type="button"  name="searchbutton" onclick="reload()">Show</button>
+
+</form>
+  </div>
+  <div class="countriesInfo2">
+    <div class="imgSize">  <img src="images/World-Flag-Buttons-Globe-300px.png" alt="" id="countryFlag"></div>
+  </div>
+</div>
+<div id="chart_div"></div>
+
+</body>
+</html>
